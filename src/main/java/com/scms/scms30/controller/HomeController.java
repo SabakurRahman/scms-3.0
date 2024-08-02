@@ -17,6 +17,11 @@ public class HomeController {
         return "about";
     }
 
+    @GetMapping("/services")
+    public String services() {
+        return "service";
+    }
+
     @GetMapping("/test")
     public String test(Model model) {
         model.addAttribute("google_link", "https://www.google.com");
